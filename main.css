@@ -7,11 +7,8 @@ img {
   z-index: 1;
 }
 
-#blob1 {
-  z-index: -2;
-  top: 50px;
-  left: 50px;
-  width: 700px;
+.content {
+  position: relative;
 }
 
 .content {
@@ -50,6 +47,7 @@ img {
   text-align: center;
   padding-top: 64px;
   padding-bottom: 64px;
+  z-index: 1;
 }
 
 .infocard {
@@ -109,7 +107,7 @@ p.cursor::after {
 
 .effect-shine {
   color: #F9A602;
-  font-size: 144px;
+  font-size: 10vw;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 6px;
