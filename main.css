@@ -2,6 +2,16 @@ html,body{
   margin:0;
   padding:0;
 }
+
+.content {
+  margin-bottom: 0 !important;
+}
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
 .divider {
     height: 3px;
     margin: 5px;
@@ -11,7 +21,8 @@ html,body{
 }
 
 #prizes {
-  height: 120vh;
+  padding-bottom: 64px;
+  min-height: 120vh;
   display: flex;
 }
 
@@ -27,7 +38,7 @@ html,body{
 #info {
   text-align: center;
   padding-top: 64px;
-  padding-bottom: 128px;
+  padding-bottom: 64px;
 }
 
 .infocard {
@@ -36,8 +47,16 @@ html,body{
   padding: 32px;
 }
 
-.people {
-  height: 120vh;
+#giveaway {
+  padding: 64px;
+}
+
+.profile {
+  padding: 32px;
+}
+
+.media p, .media strong {
+  color: #fff;
 }
 
 /* Cursor Styling */
@@ -75,8 +94,26 @@ p.cursor::after {
   }
 }
 
+/*Shine*/
 
+.effect-shine {
+  color: #F9A602;
+  font-size: 10vw;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  display: inline-block;
+  position: relative;
+  font-family: 'Merriweather', serif;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s linear infinite;
+}
 
+@keyframes shine {
+  from { -webkit-mask-position: 150%; }
+  to { -webkit-mask-position: -50%; }
+}
 
 
 
