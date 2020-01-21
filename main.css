@@ -5,6 +5,7 @@ html,body{
 
 img {
   z-index: 1;
+  user-select: none;
 }
 
 .hero-body {
