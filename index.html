@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="typewriter.js"></script>
+    <script src="imageMapResizer.min.js"></script>
   </head>
   <body>
 	<section class="hero is-info is-large">
@@ -88,7 +89,12 @@
 	  </div>
 	</section>
 
-	<img class = "banner" src = "BANNERCOLD_WITH_DOT_TECH.png">
+	<img class = "banner" src = "BANNERCOLD_WITH_DOT_TECH.png" usemap = "#sponsormap">
+
+	<map name = "sponsormap">
+		<area shape="rect" coords="500,250,780,420" alt="Sun" href="http://get.tech/">
+		<area shape="rect" coords="781,250,1430,420" alt="Sun" href="http://do.co/studenthackathon">
+	</map>
 
 	<section class = "content" style = "background-color: #3298dc;">
 	  <div id = "info" class = "container has-text-centered">
@@ -336,5 +342,8 @@
 	    <img src = "essmt_banner.png">
 	  </div>
 	</section>
+	<script>
+		imageMapResize();
+	</script>
   </body>
 </html>
